@@ -701,7 +701,7 @@ Low Resolution Tablets and ipads max-width: 767px */
 
   /* About Me Section */
 .about {
-  height: 300vh; /* Set the height to 200vh on small screens */
+  height: 350vh; /* Set the height to 200vh on small screens */
 }
 
 .about-col-1,
@@ -718,7 +718,7 @@ Low Resolution Tablets and ipads max-width: 767px */
 
 /* INTERACTIVE EXHIBITIONS */
 .creative {
-  height: 225vh;
+height: 150vh;
 }
 .project-box {
   width: 80vw; /* Adjust the width of the project box for smaller screens */
