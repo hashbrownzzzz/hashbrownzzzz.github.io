@@ -628,8 +628,6 @@ max-width: 85%; /* Adjust the image size as needed */
 height: auto;
 }
 
-
-
 /* <!-------------------------------------------- OTHER ---------------------------------------------------> */
 #other {
 padding: 30px 80px;
@@ -668,4 +666,75 @@ display: inline-block;
 .services-list div:hover {
 background: #ea0056;
 transform: translateY(-10px)
+}
+
+
+
+/* <!-------------------------------------------- MOBILE STYLES ---------------------------------------------------> */
+/* Mobile (Smartphone) max-width: 480px
+Low Resolution Tablets and ipads max-width: 767px */
+
+@media screen and (max-width: 768px) {
+  /* Landing Page and alternative to the video */
+  #home video {
+      display: none; /* Hide the video on small screens */
+  }
+  #home {
+    background-color: #000; 
+    background-image: url('myImages/bg1.png'); 
+    background-size: cover;
+  }
+
+  /* Nicole Creative Tech logo */
+  .logo {
+      max-width: 100%; /* Adjust max-width for smaller screens */
+      max-height: 100%; /* Adjust max-height for smaller screens */
+  }
+
+  /* Navigation Bar */
+  ul {
+      padding-right: 0; /* Adjust padding for smaller screens */
+  }
+  ul li {
+      margin: 10px 10px; /* Adjust margins for smaller screens */
+  }
+
+  /* About Me Section */
+.about {
+  height: 300vh; /* Set the height to 200vh on small screens */
+}
+
+.about-col-1,
+.about-col-2 {
+  flex-basis: 100%; /* Full width for small screens */
+  margin:0;
+}
+
+.about-col-1 img {
+  width: 80%; 
+  margin: 10px 10px;
+  display: block;
+}
+
+/* INTERACTIVE EXHIBITIONS */
+.creative {
+  height: 225vh;
+}
+.project-box {
+  width: 80vw; /* Adjust the width of the project box for smaller screens */
+}
+
+/* Additional adjustments for specific project boxes if needed */
+.project-box.project-box-2 {
+  width: 80vw;
+}
+
+.project-box.project-box-3 {
+  width: 80vw;
+}
+
+.project-box.project-box-4 {
+  width: 80vw;
+}
+
 }
