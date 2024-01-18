@@ -689,52 +689,62 @@ Low Resolution Tablets and ipads max-width: 767px */
   .logo {
       max-width: 100%; /* Adjust max-width for smaller screens */
       max-height: 100%; /* Adjust max-height for smaller screens */
+      top: 50vh;
   }
 
-  /* Navigation Bar */
-  ul {
-      padding-right: 0; /* Adjust padding for smaller screens */
-  }
-  ul li {
-      margin: 10px 10px; /* Adjust margins for smaller screens */
-  }
+ #about,
+ #creative,
+ #ML,
+ #NLP,
+ #games,
+ #other
 
-  /* About Me Section */
-.about {
-  height: 350vh; /* Set the height to 200vh on small screens */
-}
+ {
+  display: none;
+ }
 
-.about-col-1,
-.about-col-2 {
-  flex-basis: 100%; /* Full width for small screens */
-  margin:0;
-}
-
-.about-col-1 img {
-  width: 80%; 
-  margin: 10px 10px;
+ #home #small-screen-message {
   display: block;
+  /*animation: pulse 1.5s infinite alternate; */
+ }
 }
 
-/* INTERACTIVE EXHIBITIONS */
-.creative {
-height: 150vh;
+/*
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
-.project-box {
-  width: 80vw; /* Adjust the width of the project box for smaller screens */
+*/
+
+@media screen and (min-width: 769px) {
+  #small-screen-message {
+    display: none;
+  }
 }
 
-/* Additional adjustments for specific project boxes if needed */
-.project-box.project-box-2 {
-  width: 80vw;
+/* Style for the message */
+#small-screen-message {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  width: 90%;
+
+  color: white;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 55vh; /* Adjust the top position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  /*background-color: black; */
+  /* background-image: url('myImages/bg1.png'); */
+  /* background-size: cover; */
+
+  /* This line is for when the website is opened on a regular browser*/
+  display: none;
 }
 
-.project-box.project-box-3 {
-  width: 80vw;
-}
-
-.project-box.project-box-4 {
-  width: 80vw;
-}
-
-}
